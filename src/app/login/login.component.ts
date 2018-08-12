@@ -7,8 +7,7 @@ import { attachEmbeddedView } from '../../../node_modules/@angular/core/src/view
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-
+export class LoginComponent {
   loggedId = false;
   model = null;
   onLogin() {
@@ -19,9 +18,7 @@ export class LoginComponent implements OnInit {
       this.model = attempt;
     }
   }
-
   get diagnostic() {
     return JSON.stringify(this.model);
   }
-
 }
