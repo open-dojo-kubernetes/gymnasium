@@ -1,17 +1,19 @@
-<h2>Your credentials:</h2>
-<div style="text-align: center">
-  <label>
-    Login:
-    <input type="text" [formControl]="name" [placeholder]="skywalker_anakin">
-  </label>
-  <label>
-    Password:
-    <input type="password" [formControl]="password" [placeholder]="Padme_2kids!Luke&Leia">
-  </label>
-  <button (click)="onLogin()">Login</button>
+<div class="container">
+  <h2>Your credentials:</h2>
+  <div style="text-align: center">
+    <label>
+      Login:
+      <input type="text" [formControl]="name" [placeholder]="skywalker_anakin">
+    </label>
+    <label>
+      Password:
+      <input type="password" [formControl]="password" [placeholder]="Padme_2kids!Luke&Leia">
+    </label>
+    <button (click)="onLogin()">Login</button>
+  </div>
+  <ul>
+    <li>
+      <h2><a target="register" rel="noopener">Register</a></h2>
+    </li>
+  </ul>
 </div>
-<ul>
-  <li>
-    <h2><a target="register" rel="noopener">Register</a></h2>
-  </li>
-</ul>
