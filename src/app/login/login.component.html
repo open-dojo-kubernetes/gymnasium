@@ -1,15 +1,15 @@
 <div class="container">
   <h2>Your credentials:</h2>
   <div style="text-align: center">
-    <label>
-      Login:
-      <input type="text" [formControl]="name" [placeholder]="skywalker_anakin">
-    </label>
-    <label>
-      Password:
-      <input type="password" [formControl]="password" [placeholder]="Padme_2kids!Luke&Leia">
-    </label>
-    <button (click)="onLogin()">Login</button>
+    <div class="form-group">
+      <label for="name">Login</label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="name">Password</label>
+      <input type="password" class="form-control" id="password" required>
+    </div>
+    <button class="btn btn-success" (click)="onLogin()">Login</button>
   </div>
   <ul>
     <li>

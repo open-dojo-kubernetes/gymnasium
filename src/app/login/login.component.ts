@@ -13,6 +13,7 @@ export class LoginComponent {
   onLogin() {
     if (this.loggedId) {
       console.log(`User logged in ${this.loggedId}`);
+      console.log(`LoginAttempt model ${JSON.stringify(this.model)}`);
     } else {
       const attempt: LoginAttempt = new LoginAttempt('', '');
       this.model = attempt;
