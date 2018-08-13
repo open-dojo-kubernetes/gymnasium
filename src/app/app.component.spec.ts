@@ -24,4 +24,13 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to gynasium!');
   }));
+  it('should render number of games on going', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    const gamesOnGoing = 0; // GameService.getOnGoingGames();
+    expect(compiled.querySelector('#game-summary').textContent).toContain('There are');
+    expect(compiled.querySelector('#game-summary').textContent).toContain(gamesOnGoing);
+    expect(compiled.querySelector('#game-summary').textContent).toContain('games ongoing.');
+  }));
 });

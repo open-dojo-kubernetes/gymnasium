@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { setTheme } from 'ngx-bootstrap/utils';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'gynasium';
-  currentGames = '00';
+  title = 'GYNASIUM';
+  currentGames = '0';
+  constructor() {
+    setTheme('bs4');
+  }
 }

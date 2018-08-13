@@ -1,19 +1,17 @@
 <div class="container">
-  <h2>Your credentials:</h2>
-  <div style="text-align: center">
-    <div class="form-group">
-      <label for="name">Login</label>
-      <input type="text" class="form-control" id="name" required>
-    </div>
-    <div class="form-group">
-      <label for="name">Password</label>
-      <input type="password" class="form-control" id="password" required>
-    </div>
-    <button class="btn btn-success" (click)="onLogin()">Login</button>
-  </div>
-  <ul>
-    <li>
-      <h2><a target="register" rel="noopener">Register</a></h2>
-    </li>
-  </ul>
+  <form>
+      <div class="container-fluid">
+          <h4>Your credentials:</h4>
+          <div class="form-group">
+            <label for="name">Login</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <button id="btn-login" type="button" class="btn btn-primary" (click)="onLogin()">Login</button>
+          <button id="btn-register" type="button" class="btn btn-secondary" (click)="doRegister()">Register</button>
+        </div>
+  </form>
 </div>
