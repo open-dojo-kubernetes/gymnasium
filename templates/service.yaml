@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "gymnasium.fullname" . }}
+  labels:
+    app: {{ include "gymnasium.name" . }}
+    chart: {{ include "gymnasium.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app: {{ include "gymnasium.name" . }}
+    release: {{ .Release.Name }}
