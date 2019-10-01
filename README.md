@@ -1,6 +1,9 @@
-# Gynasium
+# Gymnasium
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
+This is a basic login/registration form that after successful login, will show the Ping pong Matchs being played.
+The public matchs can be watched in spectate mode.
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
 ## Development server
 
